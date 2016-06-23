@@ -1,4 +1,12 @@
 {{page/nav-bar}}
+
 <div class="container">
-  {{outlet}}
+  <div class="row">
+    <div class="col s12 m3">
+      {{page/side-nav}}
+    </div>
+    <div class="col s12 m9">
+      {{outlet}}
+    </div>
+  </div>
 </div>
