@@ -1,10 +1,14 @@
-class UsersController < JSONAPI::ResourceController
+class UsersController < ApplicationController
   def _session
-    _render_user(current_user)
+    if current_user
+      _render_user(current_user)
+    else
+      render_nothing
+    end
   end
 
   def login
-    user = User.find_by(username: params[:username])
+    user = User.find_by(email_address: params[:email])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
       _render_user(user)
