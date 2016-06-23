@@ -12,6 +12,10 @@ class ApplicationController < JSONAPI::ResourceController
   end
 
   def render_nothing
+    render nothing: true
+  end
+
+  def render_not_found
     render nothing: true, status: 404
   end
 

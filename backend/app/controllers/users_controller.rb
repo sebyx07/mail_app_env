@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     if current_user
       _render_user(current_user)
     else
-      render_nothing
+      render_not_found
     end
   end
 
@@ -19,7 +19,7 @@ class UsersController < ApplicationController
 
   def logout
     session[:user_id] = nil
-    render :nothing
+    render_nothing
   end
 
 

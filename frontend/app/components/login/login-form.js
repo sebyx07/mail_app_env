@@ -11,7 +11,6 @@ export default Ember.Component.extend({
     e.preventDefault();
     const email = this.get('email'),
       password = this.get('password');
-    debugger;
 
     Ember.$.post('/users/login', {email: email, password: password})
       .done((data) => {
