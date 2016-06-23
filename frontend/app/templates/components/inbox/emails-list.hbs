@@ -1,0 +1,11 @@
+<ul class="collapsible" data-collapsible="accordion">
+  {{#each emails as |email|}}
+    <li>
+      <div class="collapsible-header">{{email.subject}}</div>
+      <article class="collapsible-body">
+        <b>{{moment-from-now email.createdAt}}</b>
+        <p>{{email.payload}}</p>
+      </article>
+    </li>
+  {{/each}}
+</ul>
