@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   post 'users/logout', to: 'users#logout'
 
   jsonapi_resources :users
+  jsonapi_resources :emails
 end
