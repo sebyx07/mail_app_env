@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import config from 'mail-app/config/environment';
 
 export default Ember.Component.extend({
   store: Ember.inject.service(),
@@ -12,7 +13,7 @@ export default Ember.Component.extend({
     const email = this.get('email'),
       password = this.get('password');
 
-    Ember.$.post('/users/login', {email: email, password: password})
+    Ember.$.post(config.serverHost + '/users/login', {email: email, password: password})
       .done((data) => {
         this.get('store').pushPayload(data);
         this.get('router').transitionTo('mailbox');

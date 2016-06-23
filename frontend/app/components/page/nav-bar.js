@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import config from 'mail-app/config/environment';
 
 export default Ember.Component.extend({
   router: Ember.inject.service('-routing'),
@@ -6,7 +7,7 @@ export default Ember.Component.extend({
 
   actions: {
     logout(){
-      Ember.$.post('/users/logout')
+      Ember.$.post(config.serverHost +  '/users/logout')
         .done(() => {
           this.get('router').transitionTo('login');
         });

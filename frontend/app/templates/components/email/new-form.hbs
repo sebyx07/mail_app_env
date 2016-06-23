@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="input-field col m6 s12">
+    {{input id="to" type="email" class="validate" value=to}}
+    <label for="to">To</label>
+  </div>
+
+  <div class="input-field col m6 s12">
+    {{input id="subject" type="text" class="validate" value=subject}}
+    <label for="subject">Subject</label>
+  </div>
+</div>
+
+<div class="row">
+  <div class="input-field col s12">
+    {{textarea id="payload" class="materialize-textarea" value=payload}}
+    <label for="payload">Message</label>
+  </div>
+</div>
+
+<div class="row">
+  <div class="input-field col s12">
+    <input type="submit" class="waves-effect waves-light btn right" value="Send">
+  </div>
+</div>

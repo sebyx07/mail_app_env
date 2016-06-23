@@ -5,7 +5,8 @@ module.exports = function(environment) {
     modulePrefix: 'mail-app',
     environment: environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
+    serverHost: process.env.EMBER_CLI_ELECTRON ? 'http://localhost:3000' : '',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
