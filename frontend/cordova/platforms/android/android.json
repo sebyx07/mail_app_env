@@ -19,7 +19,7 @@
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.poeticsystems.hello"
+            "PACKAGE_NAME": "com.chat.app"
         }
     },
     "dependent_plugins": {},

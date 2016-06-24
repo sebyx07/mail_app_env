@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "mail-app.css",
+	"sources": [
+		"../../sass_compiler-input_base_path-UJCEkbyv.tmp/0/app/styles/app.scss",
+		"../../sass_compiler-input_base_path-UJCEkbyv.tmp/0/app/styles/login/login-form.scss",
+		"../../sass_compiler-input_base_path-UJCEkbyv.tmp/0/app/styles/page/side-nav.scss"
+	],
+	"sourcesContent": [
+		"@import \"login/login-form\";\n@import \"page/side-nav\";\n",
+		".login--login-form{\n  margin-top: 3em;\n  border: solid 0.1em #009688 ;\n}\n",
+		".page--side-nav{\n  text-align: center;\n}\n"
+	],
+	"mappings": "ACAA,AAAA,kBAAkB,CAAA;EAChB,UAAU,EAAE,GAAI;EAChB,MAAM,EAAE,mBAAqB,GAC9B;;ACHD,AAAA,eAAe,CAAA;EACb,UAAU,EAAE,MAAO,GACpB",
+	"names": []
+}
